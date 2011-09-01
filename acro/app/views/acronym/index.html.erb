@@ -1,0 +1,14 @@
+<h1>Acronym#index</h1>
+                  
+<table border="0" cellspacing="5" cellpadding="5">
+  <tr>
+    <th>Letters</th>
+    <th>Definitions</th>
+  </tr>
+  <% @acronyms.each do |a| %>
+    <tr>
+      <td><%= a.letters %></td>
+      <td><%= a.definition %></td>
+    </tr>
+  <% end %>
+</table>
